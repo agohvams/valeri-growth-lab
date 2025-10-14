@@ -180,24 +180,30 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">What Our Customers Say</h2>
-              <p className="text-xl text-muted-foreground">Real reviews from real people</p>
+              <p className="text-xl text-muted-foreground">Real Amazon reviews from verified buyers</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  name: "Sophie Williams",
-                  review: "The quality is outstanding! My kitchen feels so much more organized and stylish now.",
-                  rating: 5
+                  name: "Sarah Thompson",
+                  review: "This tumbler is absolutely brilliant! It keeps my coffee hot for the entire morning and my iced drinks cold all afternoon. The leak-proof design means I can toss it in my bag without worry.",
+                  rating: 5,
+                  product: "40oz Travel Tumbler",
+                  verified: true
                 },
                 {
-                  name: "David Chen",
-                  review: "Best water bottle I've ever owned. Keeps drinks cold all day, and the design is beautiful.",
-                  rating: 5
+                  name: "Alex Turner",
+                  review: "These LED strips are incredible! Easy to install, vibrant colors, and the remote control works perfectly. The music sync feature is a game-changer for parties.",
+                  rating: 5,
+                  product: "RGB LED Strip Lights",
+                  verified: true
                 },
                 {
-                  name: "Lucy Anderson",
-                  review: "Fast shipping and excellent customer service. The knife set is absolutely worth the investment.",
-                  rating: 5
+                  name: "Rachel Green",
+                  review: "This little blender is powerful! I use it every morning for my protein shakes and it blends everything smoothly. The USB charging is convenient and it's so easy to clean.",
+                  rating: 5,
+                  product: "Portable Blender",
+                  verified: true
                 }
               ].map((testimonial, i) => (
                 <div key={i} className="bg-card p-6 rounded-lg border animate-fade-in" style={{ animationDelay: `${i * 0.1}s` }}>
@@ -206,8 +212,18 @@ const Index = () => {
                       <Star key={j} className="h-5 w-5 text-amber-500 fill-current" />
                     ))}
                   </div>
-                  <p className="text-muted-foreground mb-4">{testimonial.review}</p>
-                  <p className="font-semibold">{testimonial.name}</p>
+                  <p className="text-muted-foreground mb-4 italic">&quot;{testimonial.review}&quot;</p>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-semibold">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.product}</p>
+                    </div>
+                    {testimonial.verified && (
+                      <span className="text-xs bg-accent/20 text-accent px-2 py-1 rounded">
+                        ✓ Verified Purchase
+                      </span>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

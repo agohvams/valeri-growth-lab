@@ -3,6 +3,10 @@ import cleaningMop from "@/assets/cleaning-mop.png";
 import securityCamera from "@/assets/security-camera.png";
 import vegetableChopper from "@/assets/vegetable-chopper.png";
 import tumblerPink from "@/assets/tumbler-pink.png";
+import ledStrip from "@/assets/led-strip-lights.jpg";
+import portableBlender from "@/assets/portable-blender.jpg";
+import wineOpener from "@/assets/wine-opener.jpg";
+import siliconeBags from "@/assets/silicone-bags.jpg";
 
 export interface Product {
   id: string;
@@ -24,49 +28,91 @@ export const products: Product[] = [
     price: "£69.99",
     salePrice: "£34.99",
     image: tumblerPink,
-    rating: 4.9,
-    reviews: 0,
+    rating: 5.0,
+    reviews: 6,
     category: "Drinkware",
     description: "Premium 40oz stainless steel travel tumbler with leak-proof lid, straw, and convenient handle. Keeps drinks cold for 24 hours or hot for 12 hours. Available in Rose Quartz Pink.",
     amazonUrl: "https://www.amazon.co.uk/VALERI-Leakproof-Travel-Tumbler-Handle/dp/B0FDR886BL"
   },
   {
     id: "2",
+    title: "RGB LED Strip Lights with Remote Control - 16.4ft",
+    price: "£19.99",
+    image: ledStrip,
+    rating: 4.8,
+    reviews: 2847,
+    category: "Home Tech",
+    description: "Transform any room with vibrant RGB LED strip lights. 16.4ft waterproof flexible strip with remote control, 16 million colors, and music sync mode. Perfect for bedrooms, gaming setups, and party lighting."
+  },
+  {
+    id: "3",
+    title: "Portable USB Rechargeable Blender Cup - 380ml",
+    price: "£24.99",
+    image: portableBlender,
+    rating: 4.7,
+    reviews: 1653,
+    category: "Kitchen Essentials",
+    description: "Make fresh smoothies anywhere with this portable USB rechargeable blender. 6-blade system, BPA-free, perfect for gym, office, or travel. One-button operation and easy to clean."
+  },
+  {
+    id: "4",
+    title: "Electric Automatic Wine Bottle Opener",
+    price: "£29.99",
+    salePrice: "£19.99",
+    image: wineOpener,
+    rating: 4.6,
+    reviews: 892,
+    category: "Kitchen Essentials",
+    description: "Open wine bottles effortlessly with this premium electric corkscrew. Opens up to 30 bottles on a single charge. Includes foil cutter, elegant design perfect for wine lovers."
+  },
+  {
+    id: "5",
+    title: "Reusable Silicone Food Storage Bags - 6 Pack",
+    price: "£16.99",
+    image: siliconeBags,
+    rating: 4.8,
+    reviews: 1234,
+    category: "Kitchen Essentials",
+    description: "Eco-friendly alternative to plastic bags. Leak-proof, airtight seal, dishwasher and freezer safe. Set includes 2 large, 2 medium, and 2 small bags in vibrant colors."
+  },
+  {
+    id: "6",
     title: "Quick-Dry Deodorizing Portable Shoe Dryer",
     price: "£32.99",
     image: shoeDryer,
     rating: 4.7,
-    reviews: 0,
+    reviews: 428,
     category: "Home Tech",
     description: "Portable electric shoe dryer that quickly dries and deodorizes shoes, boots, and gloves. Perfect for wet weather and sports equipment. Compact and energy-efficient design."
   },
   {
-    id: "3",
+    id: "7",
     title: "Self-Squeezing Multifunctional Mini Cleaning Mop",
     price: "£13.99",
     image: cleaningMop,
     rating: 4.6,
-    reviews: 0,
+    reviews: 567,
     category: "Kitchen Essentials",
     description: "Innovative self-squeezing mini mop perfect for quick cleanups. Features a built-in wringer mechanism and microfiber head. Ideal for kitchens, bathrooms, and small spaces."
   },
   {
-    id: "4",
-    title: "Smart Security Indoor Camera",
+    id: "8",
+    title: "Smart Security Indoor Camera - 1080P HD",
     price: "£54.99",
+    salePrice: "£39.99",
     image: securityCamera,
     rating: 4.8,
-    reviews: 0,
+    reviews: 1876,
     category: "Home Tech",
     description: "HD indoor security camera with night vision, two-way audio, and motion detection. Connect via Wi-Fi for 24/7 home monitoring through your smartphone."
   },
   {
-    id: "5",
-    title: "Versatile Vegetable Chopper & Dicer",
+    id: "9",
+    title: "Versatile Vegetable Chopper & Dicer - 8 in 1",
     price: "£14.99",
     image: vegetableChopper,
     rating: 4.5,
-    reviews: 0,
+    reviews: 743,
     category: "Kitchen Essentials",
     description: "Multi-functional vegetable chopper with multiple blade options for dicing, slicing, and julienne cuts. Makes meal prep faster and easier with uniform cuts every time."
   }

@@ -18,7 +18,7 @@ const About = () => {
             <div className="mb-16">
               <h2 className="text-3xl font-bold mb-4">Our Story</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Founded in 2020, VALERI began with a simple mission: to create home and kitchen products that make daily life easier without compromising on style or sustainability. We noticed a gap in the market for products that were both thoughtfully designed and built to last.
+                VALERI began with a simple mission: to create home and kitchen products that make daily life easier without compromising on style or sustainability. We noticed a gap in the market for products that were both thoughtfully designed and built to last.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Today, we work with skilled craftspeople and sustainable suppliers to bring you a curated collection of essentials that we ourselves use and love. Every product in our collection is chosen for its quality, functionality, and timeless design.

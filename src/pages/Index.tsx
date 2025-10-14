@@ -32,7 +32,7 @@ const Index = () => {
               <span className="text-primary">for Modern Living</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto opacity-90">
-              Designed to simplify life with durable, beautiful products for your home and kitchen
+              Designed to simplify life with durable, beautiful products for your home and kitchen. Now available on Amazon UK with Prime delivery.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/shop">
@@ -52,12 +52,12 @@ const Index = () => {
         {/* Trust Badges */}
         <section className="py-12 bg-secondary">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="flex items-center justify-center space-x-4">
                 <Truck className="h-8 w-8 text-primary" />
                 <div>
                   <h3 className="font-semibold">Free UK Shipping</h3>
-                  <p className="text-sm text-muted-foreground">On orders over £50</p>
+                  <p className="text-sm text-muted-foreground">Orders over £50</p>
                 </div>
               </div>
               <div className="flex items-center justify-center space-x-4">
@@ -70,8 +70,15 @@ const Index = () => {
               <div className="flex items-center justify-center space-x-4">
                 <Star className="h-8 w-8 text-primary" />
                 <div>
-                  <h3 className="font-semibold">4.8 Star Rating</h3>
-                  <p className="text-sm text-muted-foreground">From 500+ reviews</p>
+                  <h3 className="font-semibold">4.8★ Rating</h3>
+                  <p className="text-sm text-muted-foreground">500+ reviews</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center space-x-4">
+                <TrendingUp className="h-8 w-8 text-primary" />
+                <div>
+                  <h3 className="font-semibold">10,000+ Sold</h3>
+                  <p className="text-sm text-muted-foreground">This month</p>
                 </div>
               </div>
             </div>
@@ -104,8 +111,8 @@ const Index = () => {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Featured Products</h2>
-              <p className="text-xl text-muted-foreground">Discover our most popular kitchen essentials</p>
+              <h2 className="text-4xl font-bold mb-4">Best Sellers</h2>
+              <p className="text-xl text-muted-foreground">Our most loved products - available now on Amazon</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               {featuredProducts.map((product) => (

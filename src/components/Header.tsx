@@ -14,8 +14,8 @@ const Header = () => {
 
   return (
     <>
-      <div className="bg-primary text-primary-foreground py-2 text-center text-sm font-medium">
-        FREE UK SHIPPING ON ORDERS OVER £50
+      <div className="bg-destructive text-destructive-foreground py-2.5 text-center text-sm font-bold animate-pulse">
+        ⚡ LIMITED TIME: FREE UK SHIPPING ON ALL ORDERS OVER £50 + 50% OFF SELECTED ITEMS
       </div>
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4">

@@ -14,6 +14,7 @@ export interface Product {
   category: string;
   description: string;
   salePrice?: string;
+  amazonUrl?: string;
 }
 
 export const products: Product[] = [
@@ -26,7 +27,8 @@ export const products: Product[] = [
     rating: 4.9,
     reviews: 0,
     category: "Drinkware",
-    description: "Premium 40oz stainless steel travel tumbler with leak-proof lid, straw, and convenient handle. Keeps drinks cold for 24 hours or hot for 12 hours. Available in Rose Quartz Pink."
+    description: "Premium 40oz stainless steel travel tumbler with leak-proof lid, straw, and convenient handle. Keeps drinks cold for 24 hours or hot for 12 hours. Available in Rose Quartz Pink.",
+    amazonUrl: "https://www.amazon.co.uk/VALERI-Leakproof-Travel-Tumbler-Handle/dp/B0FDR886BL"
   },
   {
     id: "2",

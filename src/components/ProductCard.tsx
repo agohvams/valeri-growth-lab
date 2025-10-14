@@ -12,9 +12,10 @@ interface ProductCardProps {
   category: string;
   description: string;
   salePrice?: string;
+  amazonUrl?: string;
 }
 
-const ProductCard = ({ id, image, title, price, rating, reviews, category, description, salePrice }: ProductCardProps) => {
+const ProductCard = ({ id, image, title, price, rating, reviews, category, description, salePrice, amazonUrl }: ProductCardProps) => {
   return (
     <Card className="group overflow-hidden border-border hover:shadow-lg transition-all duration-300 animate-fade-in">
       <div className="relative overflow-hidden aspect-square">
@@ -23,12 +24,23 @@ const ProductCard = ({ id, image, title, price, rating, reviews, category, descr
           alt={title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
-        <Button
-          size="icon"
-          className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity"
-        >
-          <ShoppingCart className="h-4 w-4" />
-        </Button>
+        {salePrice && (
+          <div className="absolute top-4 left-4 bg-destructive text-destructive-foreground px-3 py-1 rounded-full text-sm font-bold">
+            SAVE {Math.round((1 - parseFloat(salePrice.replace('£', '')) / parseFloat(price.replace('£', ''))) * 100)}%
+          </div>
+        )}
+        {amazonUrl && (
+          <a
+            href={amazonUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <Button size="sm" className="bg-[#FF9900] hover:bg-[#FF9900]/90 text-black font-semibold">
+              Buy on Amazon
+            </Button>
+          </a>
+        )}
       </div>
       <CardContent className="p-4">
         <h3 className="font-semibold text-lg mb-2 line-clamp-1">{title}</h3>

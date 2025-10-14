@@ -1,6 +1,8 @@
-import productDrinkware from "@/assets/product-drinkware.jpg";
-import productHometech from "@/assets/product-hometech.jpg";
-import productKitchen from "@/assets/product-kitchen.jpg";
+import shoeDryer from "@/assets/shoe-dryer.png";
+import cleaningMop from "@/assets/cleaning-mop.png";
+import securityCamera from "@/assets/security-camera.png";
+import vegetableChopper from "@/assets/vegetable-chopper.png";
+import tumblerPink from "@/assets/tumbler-pink.png";
 
 export interface Product {
   id: string;
@@ -11,67 +13,59 @@ export interface Product {
   reviews: number;
   category: string;
   description: string;
+  salePrice?: string;
 }
 
 export const products: Product[] = [
   {
     id: "1",
-    title: "Premium Insulated Water Bottle",
-    price: "£34.99",
-    image: productDrinkware,
-    rating: 4.8,
-    reviews: 156,
+    title: "VALERI 40oz Leakproof Travel Tumbler with Straw & Handle",
+    price: "£69.99",
+    salePrice: "£34.99",
+    image: tumblerPink,
+    rating: 4.9,
+    reviews: 0,
     category: "Drinkware",
-    description: "Keep beverages hot for 12 hours or cold for 24 hours with our premium stainless steel insulated bottle. BPA-free and leak-proof design."
+    description: "Premium 40oz stainless steel travel tumbler with leak-proof lid, straw, and convenient handle. Keeps drinks cold for 24 hours or hot for 12 hours. Available in Rose Quartz Pink."
   },
   {
     id: "2",
-    title: "Smart Kitchen Scale",
-    price: "£49.99",
-    image: productHometech,
-    rating: 4.6,
-    reviews: 89,
+    title: "Quick-Dry Deodorizing Portable Shoe Dryer",
+    price: "£32.99",
+    image: shoeDryer,
+    rating: 4.7,
+    reviews: 0,
     category: "Home Tech",
-    description: "Precision digital scale with nutritional calculator and Bluetooth connectivity. Perfect for meal prep and healthy cooking."
+    description: "Portable electric shoe dryer that quickly dries and deodorizes shoes, boots, and gloves. Perfect for wet weather and sports equipment. Compact and energy-efficient design."
   },
   {
     id: "3",
-    title: "Professional Knife Set",
-    price: "£129.99",
-    image: productKitchen,
-    rating: 4.9,
-    reviews: 234,
+    title: "Self-Squeezing Multifunctional Mini Cleaning Mop",
+    price: "£13.99",
+    image: cleaningMop,
+    rating: 4.6,
+    reviews: 0,
     category: "Kitchen Essentials",
-    description: "Handcrafted German steel knives with ergonomic wooden handles. Includes chef's knife, paring knife, and bread knife with premium block."
+    description: "Innovative self-squeezing mini mop perfect for quick cleanups. Features a built-in wringer mechanism and microfiber head. Ideal for kitchens, bathrooms, and small spaces."
   },
   {
     id: "4",
-    title: "Bamboo Cutting Board Set",
-    price: "£39.99",
-    image: productKitchen,
-    rating: 4.7,
-    reviews: 142,
-    category: "Kitchen Essentials",
-    description: "Eco-friendly bamboo cutting boards in three sizes. Naturally antimicrobial and gentle on knife blades."
+    title: "Smart Security Indoor Camera",
+    price: "£54.99",
+    image: securityCamera,
+    rating: 4.8,
+    reviews: 0,
+    category: "Home Tech",
+    description: "HD indoor security camera with night vision, two-way audio, and motion detection. Connect via Wi-Fi for 24/7 home monitoring through your smartphone."
   },
   {
     id: "5",
-    title: "Ceramic Travel Mug",
-    price: "£24.99",
-    image: productDrinkware,
+    title: "Versatile Vegetable Chopper & Dicer",
+    price: "£14.99",
+    image: vegetableChopper,
     rating: 4.5,
-    reviews: 98,
-    category: "Drinkware",
-    description: "Double-walled ceramic travel mug with silicone lid. Keeps coffee hot without plastic taste. Dishwasher safe."
-  },
-  {
-    id: "6",
-    title: "Electric Milk Frother",
-    price: "£29.99",
-    image: productHometech,
-    rating: 4.4,
-    reviews: 67,
-    category: "Home Tech",
-    description: "Create café-quality foam at home. Four settings for hot/cold foam and hot chocolate. USB rechargeable."
+    reviews: 0,
+    category: "Kitchen Essentials",
+    description: "Multi-functional vegetable chopper with multiple blade options for dicing, slicing, and julienne cuts. Makes meal prep faster and easier with uniform cuts every time."
   }
 ];

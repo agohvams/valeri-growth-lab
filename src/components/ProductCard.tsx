@@ -3,14 +3,18 @@ import { Button } from "./ui/button";
 import { ShoppingCart, Star } from "lucide-react";
 
 interface ProductCardProps {
+  id: string;
   image: string;
   title: string;
   price: string;
   rating: number;
   reviews: number;
+  category: string;
+  description: string;
+  salePrice?: string;
 }
 
-const ProductCard = ({ image, title, price, rating, reviews }: ProductCardProps) => {
+const ProductCard = ({ id, image, title, price, rating, reviews, category, description, salePrice }: ProductCardProps) => {
   return (
     <Card className="group overflow-hidden border-border hover:shadow-lg transition-all duration-300 animate-fade-in">
       <div className="relative overflow-hidden aspect-square">
@@ -39,7 +43,16 @@ const ProductCard = ({ image, title, price, rating, reviews }: ProductCardProps)
           </div>
           <span className="text-sm text-muted-foreground ml-2">({reviews})</span>
         </div>
-        <p className="text-2xl font-bold text-primary">{price}</p>
+        <div className="flex items-center gap-2">
+          {salePrice ? (
+            <>
+              <p className="text-2xl font-bold text-primary">{salePrice}</p>
+              <p className="text-lg text-muted-foreground line-through">{price}</p>
+            </>
+          ) : (
+            <p className="text-2xl font-bold text-primary">{price}</p>
+          )}
+        </div>
       </CardContent>
     </Card>
   );

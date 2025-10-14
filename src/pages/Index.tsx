@@ -78,6 +78,28 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Video Section */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold mb-4">See VALERI in Action</h2>
+              <p className="text-xl text-muted-foreground">Discover how our products elevate everyday living</p>
+            </div>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+                <video 
+                  controls 
+                  className="w-full h-full object-cover"
+                  poster={heroImage}
+                >
+                  <source src="/videos/valeri-promo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Featured Products */}
         <section className="py-20">
           <div className="container mx-auto px-4">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 
@@ -52,14 +52,23 @@ const Footer = () => {
             © 2025 VALERI. All rights reserved.
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a 
+              href="https://www.facebook.com/people/Valeri-Goods/pfbid02agKjh3STTKLxwTgrwpFeT5qrSJdi36kWtzNvFQSRc8ruKaA4ZJgutSdNsvq6rVHul/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Visit our Facebook page"
+            >
               <Facebook className="h-5 w-5" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a 
+              href="https://www.instagram.com/1valerigood1/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Visit our Instagram page"
+            >
               <Instagram className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Twitter className="h-5 w-5" />
             </a>
           </div>
         </div>

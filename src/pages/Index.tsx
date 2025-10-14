@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 import heroImage from "@/assets/hero-image.jpg";
-import productDrinkware from "@/assets/product-drinkware.jpg";
-import productHometech from "@/assets/product-hometech.jpg";
-import productKitchen from "@/assets/product-kitchen.jpg";
+import tumblerPink from "@/assets/tumbler-pink.png";
+import securityCamera from "@/assets/security-camera.png";
+import vegetableChopper from "@/assets/vegetable-chopper.png";
 
 const Index = () => {
   const featuredProducts = products.slice(0, 3);
@@ -109,7 +109,7 @@ const Index = () => {
               <Link to="/shop?category=drinkware" className="group">
                 <div className="relative overflow-hidden rounded-lg aspect-square">
                   <img 
-                    src={productDrinkware} 
+                    src={tumblerPink} 
                     alt="Drinkware Collection"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -121,7 +121,7 @@ const Index = () => {
               <Link to="/shop?category=home-tech" className="group">
                 <div className="relative overflow-hidden rounded-lg aspect-square">
                   <img 
-                    src={productHometech} 
+                    src={securityCamera} 
                     alt="Home Tech Collection"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -130,10 +130,10 @@ const Index = () => {
                   </div>
                 </div>
               </Link>
-              <Link to="/shop?category=kitchen" className="group">
+              <Link to="/shop?category=kitchen-essentials" className="group">
                 <div className="relative overflow-hidden rounded-lg aspect-square">
                   <img 
-                    src={productKitchen} 
+                    src={vegetableChopper} 
                     alt="Kitchen Essentials Collection"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />

@@ -1,8 +1,20 @@
-import { TrendingUp, Users, Target, Briefcase, DollarSign, Award } from "lucide-react";
+import { TrendingUp, Users, Target, Briefcase, DollarSign, Award, Printer } from "lucide-react";
 
 const InvestorPitch = () => {
+  const handlePrint = () => {
+    window.print();
+  };
+
   return (
     <div className="print-container">
+      {/* Print Button - Hidden when printing */}
+      <button
+        onClick={handlePrint}
+        className="fixed top-4 right-4 z-50 print:hidden bg-primary text-white px-6 py-3 rounded-lg shadow-lg hover:bg-primary/90 transition-all flex items-center gap-2 font-semibold"
+      >
+        <Printer className="w-5 h-5" />
+        Download PDF
+      </button>
       {/* Cover Page */}
       <section className="print-page flex flex-col items-center justify-center bg-gradient-to-br from-foreground to-foreground/90">
         <div className="text-center space-y-8">

@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import KickstarterPitch from "./pages/KickstarterPitch";
 import InvestorPitch from "./pages/InvestorPitch";
+import SauceBranding from "./pages/SauceBranding";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/kickstarter-pitch" element={<KickstarterPitch />} />
           <Route path="/investor-pitch" element={<InvestorPitch />} />
+          <Route path="/sauce-branding" element={<SauceBranding />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

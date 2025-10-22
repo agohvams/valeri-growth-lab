@@ -17,6 +17,7 @@ export interface Product {
   reviews: number;
   category: string;
   description: string;
+  material?: string;
   salePrice?: string;
   amazonUrl?: string;
 }
@@ -32,6 +33,7 @@ export const products: Product[] = [
     reviews: 6,
     category: "Drinkware",
     description: "Premium 40oz stainless steel travel tumbler with leak-proof lid, straw, and convenient handle. Keeps drinks cold for 24 hours or hot for 12 hours. Available in Rose Quartz Pink.",
+    material: "18/8 Food-Grade Stainless Steel, BPA-Free Plastic Lid",
     amazonUrl: "https://www.amazon.co.uk/VALERI-Leakproof-Travel-Tumbler-Handle/dp/B0FDR886BL"
   },
   {
@@ -42,7 +44,8 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 2847,
     category: "Home Tech",
-    description: "Transform any room with vibrant RGB LED strip lights. 16.4ft waterproof flexible strip with remote control, 16 million colors, and music sync mode. Perfect for bedrooms, gaming setups, and party lighting."
+    description: "Transform any room with vibrant RGB LED strip lights. 16.4ft waterproof flexible strip with remote control, 16 million colors, and music sync mode. Perfect for bedrooms, gaming setups, and party lighting.",
+    material: "Flexible PCB, SMD 5050 LED Chips, Silicone Waterproof Coating"
   },
   {
     id: "3",
@@ -52,7 +55,8 @@ export const products: Product[] = [
     rating: 4.7,
     reviews: 1653,
     category: "Kitchen Essentials",
-    description: "Make fresh smoothies anywhere with this portable USB rechargeable blender. 6-blade system, BPA-free, perfect for gym, office, or travel. One-button operation and easy to clean."
+    description: "Make fresh smoothies anywhere with this portable USB rechargeable blender. 6-blade system, BPA-free, perfect for gym, office, or travel. One-button operation and easy to clean.",
+    material: "BPA-Free Tritan Plastic, Stainless Steel Blades"
   },
   {
     id: "4",
@@ -63,7 +67,8 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 892,
     category: "Kitchen Essentials",
-    description: "Open wine bottles effortlessly with this premium electric corkscrew. Opens up to 30 bottles on a single charge. Includes foil cutter, elegant design perfect for wine lovers."
+    description: "Open wine bottles effortlessly with this premium electric corkscrew. Opens up to 30 bottles on a single charge. Includes foil cutter, elegant design perfect for wine lovers.",
+    material: "Stainless Steel Corkscrew, ABS Plastic Body"
   },
   {
     id: "5",
@@ -73,7 +78,8 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 1234,
     category: "Kitchen Essentials",
-    description: "Eco-friendly alternative to plastic bags. Leak-proof, airtight seal, dishwasher and freezer safe. Set includes 2 large, 2 medium, and 2 small bags in vibrant colors."
+    description: "Eco-friendly alternative to plastic bags. Leak-proof, airtight seal, dishwasher and freezer safe. Set includes 2 large, 2 medium, and 2 small bags in vibrant colors.",
+    material: "100% Food-Grade Platinum Silicone, BPA-Free"
   },
   {
     id: "6",
@@ -83,7 +89,8 @@ export const products: Product[] = [
     rating: 4.7,
     reviews: 428,
     category: "Home Tech",
-    description: "Portable electric shoe dryer that quickly dries and deodorizes shoes, boots, and gloves. Perfect for wet weather and sports equipment. Compact and energy-efficient design."
+    description: "Portable electric shoe dryer that quickly dries and deodorizes shoes, boots, and gloves. Perfect for wet weather and sports equipment. Compact and energy-efficient design.",
+    material: "ABS Plastic Housing, PTC Ceramic Heating Elements"
   },
   {
     id: "7",
@@ -93,7 +100,8 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 567,
     category: "Kitchen Essentials",
-    description: "Innovative self-squeezing mini mop perfect for quick cleanups. Features a built-in wringer mechanism and microfiber head. Ideal for kitchens, bathrooms, and small spaces."
+    description: "Innovative self-squeezing mini mop perfect for quick cleanups. Features a built-in wringer mechanism and microfiber head. Ideal for kitchens, bathrooms, and small spaces.",
+    material: "Microfiber Mop Head, PP Plastic Handle, Stainless Steel Mechanism"
   },
   {
     id: "8",
@@ -104,7 +112,8 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 1876,
     category: "Home Tech",
-    description: "HD indoor security camera with night vision, two-way audio, and motion detection. Connect via Wi-Fi for 24/7 home monitoring through your smartphone."
+    description: "HD indoor security camera with night vision, two-way audio, and motion detection. Connect via Wi-Fi for 24/7 home monitoring through your smartphone.",
+    material: "ABS Plastic Housing, Glass Lens, Metal Base"
   },
   {
     id: "9",
@@ -114,6 +123,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 743,
     category: "Kitchen Essentials",
-    description: "Multi-functional vegetable chopper with multiple blade options for dicing, slicing, and julienne cuts. Makes meal prep faster and easier with uniform cuts every time."
+    description: "Multi-functional vegetable chopper with multiple blade options for dicing, slicing, and julienne cuts. Makes meal prep faster and easier with uniform cuts every time.",
+    material: "BPA-Free ABS Plastic, 420 Stainless Steel Blades"
   }
 ];

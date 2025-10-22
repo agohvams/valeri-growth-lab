@@ -11,11 +11,12 @@ interface ProductCardProps {
   reviews: number;
   category: string;
   description: string;
+  material?: string;
   salePrice?: string;
   amazonUrl?: string;
 }
 
-const ProductCard = ({ id, image, title, price, rating, reviews, category, description, salePrice, amazonUrl }: ProductCardProps) => {
+const ProductCard = ({ id, image, title, price, rating, reviews, category, description, material, salePrice, amazonUrl }: ProductCardProps) => {
   return (
     <Card className="group overflow-hidden border-border hover:shadow-lg transition-all duration-300 animate-fade-in">
       <div className="relative overflow-hidden aspect-square">
@@ -55,6 +56,11 @@ const ProductCard = ({ id, image, title, price, rating, reviews, category, descr
           </div>
           <span className="text-sm text-muted-foreground ml-2">({reviews})</span>
         </div>
+        {material && (
+          <p className="text-xs text-muted-foreground mb-2 line-clamp-2">
+            <span className="font-medium">Material:</span> {material}
+          </p>
+        )}
         <div className="flex items-center gap-2">
           {salePrice ? (
             <>

@@ -11,11 +11,11 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4 text-xs uppercase tracking-wider">HELP</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">FAQ</a></li>
-              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Delivery Information</a></li>
-              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Returns Policy</a></li>
-              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Make A Return</a></li>
-              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Orders</a></li>
+              <li><Link to="/faq" className="text-xs text-muted-foreground hover:text-primary transition-colors">FAQ</Link></li>
+              <li><Link to="/delivery" className="text-xs text-muted-foreground hover:text-primary transition-colors">Delivery Information</Link></li>
+              <li><Link to="/returns" className="text-xs text-muted-foreground hover:text-primary transition-colors">Returns Policy</Link></li>
+              <li><Link to="/returns" className="text-xs text-muted-foreground hover:text-primary transition-colors">Make A Return</Link></li>
+              <li><Link to="/contact" className="text-xs text-muted-foreground hover:text-primary transition-colors">Orders</Link></li>
             </ul>
           </div>
 
@@ -34,8 +34,8 @@ const Footer = () => {
               <li><Link to="/blog" className="text-xs text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
               <li><Link to="/about" className="text-xs text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="text-xs text-muted-foreground hover:text-primary transition-colors">Contact</Link></li>
-              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Careers</a></li>
-              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Student Discount</a></li>
+              <li><Link to="/careers" className="text-xs text-muted-foreground hover:text-primary transition-colors">Careers</Link></li>
+              <li><Link to="/student-discount" className="text-xs text-muted-foreground hover:text-primary transition-colors">Student Discount</Link></li>
             </ul>
           </div>
 
@@ -43,8 +43,8 @@ const Footer = () => {
             <h4 className="font-bold mb-4 text-xs uppercase tracking-wider">MORE ABOUT VALERI</h4>
             <ul className="space-y-2">
               <li><Link to="/blog" className="text-xs text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
-              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Sustainability</a></li>
-              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Our Story</a></li>
+              <li><Link to="/sustainability" className="text-xs text-muted-foreground hover:text-primary transition-colors">Sustainability</Link></li>
+              <li><Link to="/about" className="text-xs text-muted-foreground hover:text-primary transition-colors">Our Story</Link></li>
             </ul>
           </div>
 

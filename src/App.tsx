@@ -9,6 +9,12 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
+import Delivery from "./pages/Delivery";
+import Returns from "./pages/Returns";
+import Careers from "./pages/Careers";
+import Sustainability from "./pages/Sustainability";
+import StudentDiscount from "./pages/StudentDiscount";
 import KickstarterPitch from "./pages/KickstarterPitch";
 import InvestorPitch from "./pages/InvestorPitch";
 import GrowthLoanPitch from "./pages/GrowthLoanPitch";
@@ -30,6 +36,12 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/delivery" element={<Delivery />} />
+          <Route path="/returns" element={<Returns />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/sustainability" element={<Sustainability />} />
+          <Route path="/student-discount" element={<StudentDiscount />} />
           <Route path="/kickstarter-pitch" element={<KickstarterPitch />} />
           <Route path="/investor-pitch" element={<InvestorPitch />} />
           <Route path="/growth-loan-pitch" element={<GrowthLoanPitch />} />

@@ -41,33 +41,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Trust Badges */}
-        <section className="py-16 border-b">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <Truck className="h-10 w-10 mx-auto mb-3 text-foreground" />
-                <h3 className="font-black text-sm uppercase tracking-wider mb-1">Free Shipping</h3>
-                <p className="text-xs text-muted-foreground">Orders £50+</p>
-              </div>
-              <div className="text-center">
-                <Shield className="h-10 w-10 mx-auto mb-3 text-foreground" />
-                <h3 className="font-black text-sm uppercase tracking-wider mb-1">Quality First</h3>
-                <p className="text-xs text-muted-foreground">Built to Last</p>
-              </div>
-              <div className="text-center">
-                <Star className="h-10 w-10 mx-auto mb-3 text-foreground" />
-                <h3 className="font-black text-sm uppercase tracking-wider mb-1">4.8★ Rated</h3>
-                <p className="text-xs text-muted-foreground">500+ Reviews</p>
-              </div>
-              <div className="text-center">
-                <TrendingUp className="h-10 w-10 mx-auto mb-3 text-foreground" />
-                <h3 className="font-black text-sm uppercase tracking-wider mb-1">10K+ Sold</h3>
-                <p className="text-xs text-muted-foreground">This Month</p>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Featured Products */}
         <section className="py-24">
@@ -201,6 +174,34 @@ const Index = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Trust Badges */}
+        <section className="py-16 border-t">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <Truck className="h-8 w-8 mx-auto mb-3 text-foreground" />
+                <h3 className="font-bold text-xs uppercase tracking-wider mb-1">Free Shipping</h3>
+                <p className="text-xs text-muted-foreground">Orders £50+</p>
+              </div>
+              <div className="text-center">
+                <Shield className="h-8 w-8 mx-auto mb-3 text-foreground" />
+                <h3 className="font-bold text-xs uppercase tracking-wider mb-1">Quality First</h3>
+                <p className="text-xs text-muted-foreground">Built to Last</p>
+              </div>
+              <div className="text-center">
+                <Star className="h-8 w-8 mx-auto mb-3 text-foreground" />
+                <h3 className="font-bold text-xs uppercase tracking-wider mb-1">4.8★ Rated</h3>
+                <p className="text-xs text-muted-foreground">500+ Reviews</p>
+              </div>
+              <div className="text-center">
+                <TrendingUp className="h-8 w-8 mx-auto mb-3 text-foreground" />
+                <h3 className="font-bold text-xs uppercase tracking-wider mb-1">10K+ Sold</h3>
+                <p className="text-xs text-muted-foreground">This Month</p>
+              </div>
             </div>
           </div>
         </section>

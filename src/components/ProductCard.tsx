@@ -44,18 +44,7 @@ const ProductCard = ({ id, image, title, price, rating, reviews, category, descr
         )}
       </div>
       <CardContent className="p-5">
-        <h3 className="font-bold text-base mb-3 line-clamp-2 uppercase tracking-tight">{title}</h3>
-        <div className="flex items-center mb-3">
-          <div className="flex items-center text-foreground">
-            {[...Array(5)].map((_, i) => (
-              <Star
-                key={i}
-                className={`h-3 w-3 ${i < Math.floor(rating) ? "fill-current" : "fill-muted"}`}
-              />
-            ))}
-          </div>
-          <span className="text-xs text-muted-foreground ml-2 font-medium">({reviews})</span>
-        </div>
+        <h3 className="font-bold text-base mb-4 line-clamp-2 uppercase tracking-tight">{title}</h3>
         <div className="flex items-center gap-3">
           {salePrice ? (
             <>

@@ -69,28 +69,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Video Section */}
-        <section className="py-0 bg-secondary">
-          <div className="container mx-auto px-4 py-24">
-            <div className="mb-16">
-              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">In Action</h2>
-              <p className="text-lg text-muted-foreground">See what you're missing</p>
-            </div>
-            <div className="max-w-5xl mx-auto">
-              <div className="relative aspect-video overflow-hidden bg-primary">
-                <video 
-                  controls 
-                  className="w-full h-full object-cover"
-                  poster={heroImage}
-                >
-                  <source src="/videos/valeri-promo.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Featured Products */}
         <section className="py-24">
           <div className="container mx-auto px-4">
@@ -109,6 +87,28 @@ const Index = () => {
                   Shop All
                 </Button>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Video Section */}
+        <section className="py-24 bg-secondary">
+          <div className="container mx-auto px-4">
+            <div className="mb-16">
+              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">In Action</h2>
+              <p className="text-lg text-muted-foreground">See what you're missing</p>
+            </div>
+            <div className="max-w-5xl mx-auto">
+              <div className="relative aspect-video overflow-hidden bg-primary">
+                <video 
+                  controls 
+                  className="w-full h-full object-cover"
+                  poster={heroImage}
+                >
+                  <source src="/videos/valeri-promo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
         </section>

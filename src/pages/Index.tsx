@@ -84,7 +84,10 @@ const Index = () => {
             <div className="max-w-5xl mx-auto">
               <div className="relative aspect-video overflow-hidden bg-primary">
                 <video 
-                  controls 
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   className="w-full h-full object-cover"
                   poster={heroImage}
                 >

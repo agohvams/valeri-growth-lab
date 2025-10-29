@@ -23,7 +23,7 @@ const Header = () => {
           <div className="flex flex-col items-center py-4">
             {/* Logo - Top Center */}
             <Link to="/" className="mb-4">
-              <img src={valeriLogo} alt="VALERI" className="h-12 md:h-14" />
+              <img src={valeriLogo} alt="VALERI" className="h-10 md:h-12" />
             </Link>
             
             <div className="flex items-center justify-between w-full">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
@@ -13,9 +14,32 @@ const Shop = () => {
     ? products 
     : products.filter(p => p.category.toLowerCase().replace(" ", "-") === selectedCategory);
 
+  // Generate ItemList schema for SEO
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": products.map((product, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://valerigoods.com/product/${product.id}`
+    }))
+  };
+
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <>
+      <Helmet>
+        <title>Shop All Products | VALERI - Premium Kitchen & Home Essentials</title>
+        <meta name="description" content="Shop premium kitchen essentials, modern drinkware, and innovative home tech. Free UK shipping on orders over £50. Quality products built to last." />
+        <meta name="keywords" content="buy kitchen essentials, premium drinkware, home tech gadgets, insulated tumblers, kitchen tools, smart home devices, eco-friendly products" />
+        <link rel="canonical" href="https://valerigoods.com/shop" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify(itemListSchema)}
+        </script>
+      </Helmet>
+      
+      <div className="min-h-screen flex flex-col">
+        <Header />
       
       <main className="flex-1 py-16">
         <div className="container mx-auto px-4">
@@ -85,8 +109,9 @@ const Shop = () => {
         </div>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://valerigoods.com/</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Shop Page -->
+  <url>
+    <loc>https://valerigoods.com/shop</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Individual Products -->
+  <url>
+    <loc>https://valerigoods.com/product/1</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://valerigoods.com/assets/valeri-tumbler-product.jpg</image:loc>
+      <image:title>VALERI 40oz All-Day Tumbler - Rose Quartz</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://valerigoods.com/product/2</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://valerigoods.com/assets/led-strip-lights.jpg</image:loc>
+      <image:title>RGB LED Strip Lights with Remote Control - 16.4ft</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://valerigoods.com/product/3</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://valerigoods.com/assets/portable-blender.jpg</image:loc>
+      <image:title>Portable USB Rechargeable Blender Cup - 380ml</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://valerigoods.com/product/4</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://valerigoods.com/assets/wine-opener.jpg</image:loc>
+      <image:title>Electric Automatic Wine Bottle Opener</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://valerigoods.com/product/5</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://valerigoods.com/assets/silicone-bags.jpg</image:loc>
+      <image:title>Reusable Silicone Food Storage Bags - 6 Pack</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://valerigoods.com/product/6</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://valerigoods.com/assets/shoe-dryer.png</image:loc>
+      <image:title>Quick-Dry Deodorizing Portable Shoe Dryer</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://valerigoods.com/product/7</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://valerigoods.com/assets/cleaning-mop.png</image:loc>
+      <image:title>Self-Squeezing Multifunctional Mini Cleaning Mop</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://valerigoods.com/product/8</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://valerigoods.com/assets/security-camera.png</image:loc>
+      <image:title>Smart Security Indoor Camera - 1080P HD</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://valerigoods.com/product/9</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://valerigoods.com/assets/vegetable-chopper.png</image:loc>
+      <image:title>Versatile Vegetable Chopper & Dicer - 8 in 1</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Blog -->
+  <url>
+    <loc>https://valerigoods.com/blog</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- About -->
+  <url>
+    <loc>https://valerigoods.com/about</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Contact -->
+  <url>
+    <loc>https://valerigoods.com/contact</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- FAQ -->
+  <url>
+    <loc>https://valerigoods.com/faq</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Delivery -->
+  <url>
+    <loc>https://valerigoods.com/delivery</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Returns -->
+  <url>
+    <loc>https://valerigoods.com/returns</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Sustainability -->
+  <url>
+    <loc>https://valerigoods.com/sustainability</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

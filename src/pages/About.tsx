@@ -1,11 +1,25 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Heart, Target, Users } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <>
+      <Helmet>
+        <title>About VALERI | Our Story, Values & Commitment to Quality</title>
+        <meta name="description" content="Learn about VALERI's mission to create beautiful, functional home essentials. Discover our commitment to quality, sustainable design, and customer satisfaction." />
+        <meta name="keywords" content="about valeri, our story, sustainable home goods, quality kitchen products, eco-friendly kitchenware, company values" />
+        <link rel="canonical" href="https://valerigoods.com/about" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="About VALERI | Quality Home Essentials" />
+        <meta property="og:description" content="We believe that everyday essentials should be both beautiful and functional. Learn about our story and values." />
+        <meta property="og:url" content="https://valerigoods.com/about" />
+      </Helmet>
+
+      <div className="min-h-screen flex flex-col">
+        <Header />
       
       <main className="flex-1 py-12">
         <div className="container mx-auto px-4">
@@ -66,8 +80,9 @@ const About = () => {
         </div>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

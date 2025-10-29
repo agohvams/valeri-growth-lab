@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Star, TrendingUp, Shield, Truck, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
@@ -10,9 +11,70 @@ import heroImage from "@/assets/hero-image.jpg";
 const Index = () => {
   const featuredProducts = products;
 
+  // Organization Schema
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VALERI",
+    "url": "https://valerigoods.com",
+    "logo": "https://valerigoods.com/logo.png",
+    "description": "Premium kitchen and home essentials designed to simplify modern living. Shop insulated tumblers, smart home tech, and innovative kitchen gadgets.",
+    "sameAs": [
+      "https://www.facebook.com/people/Valeri-Goods/pfbid02agKjh3STTKLxwTgrwpFeT5qrSJdi36kWtzNvFQSRc8ruKaA4ZJgutSdNsvq6rVHul/",
+      "https://www.instagram.com/1valerigood1/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "availableLanguage": "English"
+    }
+  };
+
+  // Website Schema
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "VALERI",
+    "url": "https://valerigoods.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://valerigoods.com/shop?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <>
+      <Helmet>
+        <title>VALERI - Modern Kitchen & Home Essentials | Free UK Shipping Over £50</title>
+        <meta name="description" content="Discover thoughtfully designed kitchen essentials, drinkware, and home tech that simplify modern living. Premium quality, built to last. Free UK shipping on orders over £50." />
+        <meta name="keywords" content="kitchen essentials, modern drinkware, home tech, kitchen gadgets, home goods, sustainable kitchenware, insulated water bottle, travel tumbler, smart home devices" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://valerigoods.com/" />
+        <meta property="og:title" content="VALERI - Modern Kitchen & Home Essentials" />
+        <meta property="og:description" content="Thoughtfully designed home & kitchen essentials that make daily routines easier and more enjoyable. Shop premium quality products built to last." />
+        <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="VALERI - Modern Kitchen & Home Essentials" />
+        <meta name="twitter:description" content="Thoughtfully designed home & kitchen essentials that make daily routines easier and more enjoyable." />
+        <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+        
+        <link rel="canonical" href="https://valerigoods.com/" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(websiteSchema)}
+        </script>
+      </Helmet>
+
+      <div className="min-h-screen flex flex-col">
+        <Header />
       
       <main className="flex-1">
         {/* Hero Section - Gymshark Style */}
@@ -226,8 +288,9 @@ const Index = () => {
         </section>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

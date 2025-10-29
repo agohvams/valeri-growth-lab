@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BlogCard from "@/components/BlogCard";
@@ -7,8 +8,21 @@ import { Search } from "lucide-react";
 
 const Blog = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <>
+      <Helmet>
+        <title>Kitchen & Home Blog | VALERI - Tips, Guides & Inspiration</title>
+        <meta name="description" content="Discover expert kitchen tips, sustainable living guides, and home organization inspiration. Learn how to make the most of your kitchen essentials and create a better home." />
+        <meta name="keywords" content="kitchen tips, home organization, sustainable living, kitchen hacks, home improvement, cooking tips, kitchen gadget reviews" />
+        <link rel="canonical" href="https://valerigoods.com/blog" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Kitchen & Home Blog | VALERI" />
+        <meta property="og:description" content="Tips, inspiration, and guides to help you create the perfect kitchen and home" />
+        <meta property="og:url" content="https://valerigoods.com/blog" />
+      </Helmet>
+
+      <div className="min-h-screen flex flex-col">
+        <Header />
       
       <main className="flex-1 py-12">
         <div className="container mx-auto px-4">
@@ -35,8 +49,9 @@ const Blog = () => {
         </div>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

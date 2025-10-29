@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Star, TrendingUp, Shield, Truck } from "lucide-react";
+import { Star, TrendingUp, Shield, Truck, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
@@ -72,21 +72,17 @@ const Index = () => {
         {/* Featured Products */}
         <section className="py-24">
           <div className="container mx-auto px-4">
-            <div className="mb-16">
-              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">New In</h2>
-              <p className="text-lg text-muted-foreground">Premium quality, trusted by thousands</p>
+            <div className="flex items-center justify-between mb-12">
+              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">New In</h2>
+              <Link to="/shop" className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider hover:opacity-70 transition-opacity">
+                View All
+                <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {featuredProducts.map((product) => (
                 <ProductCard key={product.id} {...product} />
               ))}
-            </div>
-            <div className="text-center">
-              <Link to="/shop">
-                <Button size="lg" className="px-12 py-6 text-base font-bold uppercase tracking-wider">
-                  View All
-                </Button>
-              </Link>
             </div>
           </div>
         </section>

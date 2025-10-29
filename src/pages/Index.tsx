@@ -6,9 +6,6 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 import heroImage from "@/assets/hero-image.jpg";
-import tumblerPink from "@/assets/tumbler-pink.png";
-import securityCamera from "@/assets/security-camera.png";
-import vegetableChopper from "@/assets/vegetable-chopper.png";
 
 const Index = () => {
   const featuredProducts = products;
@@ -147,9 +144,9 @@ const Index = () => {
               {[
                 {
                   name: "Sarah Thompson",
-                  review: "This tumbler is absolutely brilliant! It keeps my coffee hot for the entire morning and my iced drinks cold all afternoon. The leak-proof design means I can toss it in my bag without worry.",
+                  review: "This tumbler is absolutely brilliant! 100% leak-proof and keeps my drinks ice cold for 24 hours. The Rose Quartz color is gorgeous and it fits perfectly in my car cup holder!",
                   rating: 5,
-                  product: "40oz Travel Tumbler",
+                  product: "VALERI 40oz Tumbler",
                   verified: true
                 },
                 {

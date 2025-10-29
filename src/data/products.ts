@@ -2,7 +2,7 @@ import shoeDryer from "@/assets/shoe-dryer.png";
 import cleaningMop from "@/assets/cleaning-mop.png";
 import securityCamera from "@/assets/security-camera.png";
 import vegetableChopper from "@/assets/vegetable-chopper.png";
-import tumblerPink from "@/assets/tumbler-pink.png";
+import tumblerPink from "@/assets/valeri-tumbler-ad.jpg";
 import ledStrip from "@/assets/led-strip-lights.jpg";
 import portableBlender from "@/assets/portable-blender.jpg";
 import wineOpener from "@/assets/wine-opener.jpg";
@@ -25,15 +25,14 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "1",
-    title: "VALERI 40oz Leakproof Travel Tumbler with Straw & Handle",
-    price: "£69.99",
-    salePrice: "£34.99",
+    title: "VALERI 40oz All-Day Tumbler - Rose Quartz",
+    price: "£38.00",
     image: tumblerPink,
     rating: 5.0,
     reviews: 6,
     category: "Drinkware",
-    description: "Premium 40oz stainless steel travel tumbler with leak-proof lid, straw, and convenient handle. Keeps drinks cold for 24 hours or hot for 12 hours. Available in Rose Quartz Pink.",
-    material: "18/8 Food-Grade Stainless Steel, BPA-Free Plastic Lid",
+    description: "Stay stylish and hydrated with a tumbler designed for the modern woman on the go. 100% leak-proof locking lid, 24-hour cold retention, 8-hour hot retention. Ergonomic handle & tapered base fits standard cup holders. Dishwasher safe with premium matte finish.",
+    material: "Food-Grade Stainless Steel, Double-Wall Vacuum Insulation",
     amazonUrl: "https://www.amazon.co.uk/VALERI-Leakproof-Travel-Tumbler-Handle/dp/B0FDR886BL"
   },
   {

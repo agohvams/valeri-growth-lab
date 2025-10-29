@@ -22,8 +22,8 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center py-4">
             {/* Logo - Top Center */}
-            <Link to="/" className="mb-4 font-serif text-3xl md:text-4xl font-black tracking-tight">
-              VALEr
+            <Link to="/" className="mb-4 font-serif text-4xl md:text-5xl font-black tracking-tight">
+              VALERI
             </Link>
             
             <div className="flex items-center justify-between w-full">

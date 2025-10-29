@@ -11,7 +11,7 @@ import securityCamera from "@/assets/security-camera.png";
 import vegetableChopper from "@/assets/vegetable-chopper.png";
 
 const Index = () => {
-  const featuredProducts = products.slice(0, 3);
+  const featuredProducts = products;
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -98,7 +98,7 @@ const Index = () => {
               <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Best Sellers</h2>
               <p className="text-lg text-muted-foreground">Premium quality, trusted by thousands</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
               {featuredProducts.map((product) => (
                 <ProductCard key={product.id} {...product} />
               ))}

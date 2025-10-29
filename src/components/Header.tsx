@@ -19,27 +19,29 @@ const Header = () => {
       </div>
       <header className="sticky top-0 z-50 bg-background border-b border-border">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-4">
-            {/* Logo */}
-            <Link to="/" className="text-2xl md:text-3xl font-black text-foreground tracking-tighter uppercase">
+          <div className="flex flex-col items-center py-4">
+            {/* Logo - Top Center */}
+            <Link to="/" className="text-3xl md:text-4xl font-black text-foreground tracking-tighter uppercase mb-4">
               VALERI
             </Link>
+            
+            <div className="flex items-center justify-between w-full">
 
-            {/* Desktop Navigation - Center */}
-            <nav className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className="text-xs font-bold uppercase tracking-wider text-foreground hover:text-muted-foreground transition-colors"
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </nav>
+              {/* Desktop Navigation */}
+              <nav className="hidden md:flex items-center space-x-8 mx-auto">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className="text-xs font-bold uppercase tracking-wider text-foreground hover:text-muted-foreground transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </nav>
 
-            {/* Action Icons */}
-            <div className="flex items-center space-x-2">
+              {/* Action Icons */}
+              <div className="flex items-center space-x-2 ml-auto">
               <Button variant="ghost" size="icon" className="hidden md:flex hover:bg-secondary">
                 <Search className="h-5 w-5" />
               </Button>
@@ -67,6 +69,7 @@ const Header = () => {
                   </nav>
                 </SheetContent>
               </Sheet>
+              </div>
             </div>
           </div>
         </div>

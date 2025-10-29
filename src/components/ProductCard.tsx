@@ -44,15 +44,15 @@ const ProductCard = ({ id, image, title, price, rating, reviews, category, descr
         )}
       </div>
       <CardContent className="p-5">
-        <h3 className="font-bold text-base mb-4 line-clamp-2 uppercase tracking-tight">{title}</h3>
+        <h3 className="font-bold text-sm mb-3 line-clamp-2 uppercase tracking-tight">{title}</h3>
         <div className="flex items-center gap-3">
           {salePrice ? (
             <>
-              <p className="text-xl font-black text-foreground">{salePrice}</p>
-              <p className="text-sm text-muted-foreground line-through font-medium">{price}</p>
+              <p className="text-lg font-black text-foreground">{salePrice}</p>
+              <p className="text-xs text-muted-foreground line-through font-medium">{price}</p>
             </>
           ) : (
-            <p className="text-xl font-black text-foreground">{price}</p>
+            <p className="text-lg font-black text-foreground">{price}</p>
           )}
         </div>
         <Button className="w-full mt-4 font-bold uppercase tracking-wider text-xs" size="lg">

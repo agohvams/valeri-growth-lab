@@ -2,7 +2,7 @@ import shoeDryer from "@/assets/shoe-dryer.png";
 import cleaningMop from "@/assets/cleaning-mop.png";
 import securityCamera from "@/assets/security-camera.png";
 import vegetableChopper from "@/assets/vegetable-chopper.png";
-import tumblerPink from "@/assets/valeri-tumbler-ad.jpg";
+import tumblerPink from "@/assets/valeri-tumbler-product.jpg";
 import ledStrip from "@/assets/led-strip-lights.jpg";
 import portableBlender from "@/assets/portable-blender.jpg";
 import wineOpener from "@/assets/wine-opener.jpg";

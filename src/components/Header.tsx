@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ShoppingCart, Search, Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import valeriLogo from "@/assets/valeri-logo.png";
 
 const Header = () => {
   const navLinks = [
@@ -21,8 +22,8 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center py-4">
             {/* Logo - Top Center */}
-            <Link to="/" className="text-3xl md:text-4xl font-black text-foreground tracking-tighter uppercase mb-4">
-              VALERI
+            <Link to="/" className="mb-4">
+              <img src={valeriLogo} alt="VALERI" className="h-12 md:h-14" />
             </Link>
             
             <div className="flex items-center justify-between w-full">

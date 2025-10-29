@@ -22,7 +22,7 @@ const Index = () => {
             style={{ backgroundImage: `url(${heroImage})` }}
           />
           <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
-            <h1 className="text-6xl md:text-8xl font-black mb-6 leading-none tracking-tighter uppercase">
+            <h1 className="text-4xl md:text-6xl font-black mb-6 leading-none tracking-tighter uppercase">
               Be Limitless
             </h1>
             <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto font-medium">
@@ -43,7 +43,7 @@ const Index = () => {
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between mb-12">
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">New In</h2>
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter">New In</h2>
               <Link to="/shop" className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider hover:opacity-70 transition-opacity">
                 View All
                 <ArrowRight className="h-4 w-4" />
@@ -61,7 +61,7 @@ const Index = () => {
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter">
+              <h2 className="text-3xl md:text-4xl font-black mb-8 uppercase tracking-tighter">
                 HOME ESSENTIALS & EVERYDAY MUST-HAVES
               </h2>
               <p className="text-lg mb-6 leading-relaxed">
@@ -74,10 +74,6 @@ const Index = () => {
         {/* Video Section */}
         <section className="py-24 bg-secondary">
           <div className="container mx-auto px-4">
-            <div className="mb-16">
-              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">In Action</h2>
-              <p className="text-lg text-muted-foreground">See what you're missing</p>
-            </div>
             <div className="max-w-5xl mx-auto">
               <div className="relative aspect-video overflow-hidden bg-primary">
                 <video 

@@ -85,7 +85,7 @@ const Index = () => {
           />
           <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
             <h1 className="text-2xl md:text-4xl font-black mb-6 leading-none tracking-tighter uppercase">
-              Thoughtful essentials for modern living
+              Modern Living
             </h1>
             <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto font-medium">
               Premium essentials designed for those who demand more from life

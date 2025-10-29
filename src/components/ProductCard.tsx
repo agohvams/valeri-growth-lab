@@ -32,18 +32,6 @@ const ProductCard = ({ id, image, title, price, rating, reviews, category, descr
             -{Math.round((1 - parseFloat(salePrice.replace('£', '')) / parseFloat(price.replace('£', ''))) * 100)}%
           </div>
         )}
-        {amazonUrl && (
-          <a
-            href={amazonUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity"
-          >
-            <Button size="sm" className="bg-[#FF9900] hover:bg-[#FF9900]/90 text-black font-semibold">
-              Buy on Amazon
-            </Button>
-          </a>
-        )}
       </div>
       <CardContent className="p-5">
         <h3 className="font-bold text-sm mb-3 line-clamp-2 uppercase tracking-tight">{title}</h3>

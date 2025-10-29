@@ -208,19 +208,11 @@ const Product = () => {
                 )}
 
                 {/* CTA Buttons */}
-                <div className="space-y-4 mb-8">
+                <div className="mb-8">
                   <Button size="lg" className="w-full text-base font-bold uppercase tracking-wider py-6">
                     <ShoppingCart className="mr-2 h-5 w-5" />
                     Add to Cart
                   </Button>
-                  
-                  {product.amazonUrl && (
-                    <a href={product.amazonUrl} target="_blank" rel="noopener noreferrer" className="block">
-                      <Button size="lg" variant="outline" className="w-full text-base font-bold uppercase tracking-wider py-6 bg-[#FF9900] hover:bg-[#FF9900]/90 text-black border-0">
-                        Buy on Amazon
-                      </Button>
-                    </a>
-                  )}
                 </div>
 
                 {/* Trust Badges */}
@@ -241,6 +233,20 @@ const Product = () => {
                       </div>
                     </div>
                   </div>
+                  
+                  {product.amazonUrl && (
+                    <div className="mt-6 pt-6 border-t text-center">
+                      <p className="text-sm text-muted-foreground mb-2">Also available on</p>
+                      <a 
+                        href={product.amazonUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-[#FF9900] hover:text-[#FF9900]/80 font-semibold text-sm underline underline-offset-4"
+                      >
+                        Amazon.co.uk
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

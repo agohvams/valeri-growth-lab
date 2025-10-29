@@ -6,43 +6,56 @@ import { Button } from "./ui/button";
 const Footer = () => {
   return (
     <footer className="bg-secondary mt-20">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">VALERI</h3>
-            <p className="text-sm text-muted-foreground">
-              Thoughtful essentials for modern living. Quality products designed to simplify your daily routines.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-bold mb-4 text-xs uppercase tracking-wider">HELP</h4>
             <ul className="space-y-2">
-              <li><Link to="/shop" className="text-sm text-muted-foreground hover:text-primary transition-colors">Shop All</Link></li>
-              <li><Link to="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
-              <li><Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
-              <li><Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">FAQ</a></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Delivery Information</a></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Returns Policy</a></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Make A Return</a></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Orders</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Customer Service</h4>
+            <h4 className="font-bold mb-4 text-xs uppercase tracking-wider">MY ACCOUNT</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Shipping Info</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Returns</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">FAQ</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Track Order</a></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Login</a></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Register</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Newsletter</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              Subscribe for exclusive offers and kitchen tips.
+            <h4 className="font-bold mb-4 text-xs uppercase tracking-wider">PAGES</h4>
+            <ul className="space-y-2">
+              <li><Link to="/shop" className="text-xs text-muted-foreground hover:text-primary transition-colors">Shop All</Link></li>
+              <li><Link to="/blog" className="text-xs text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
+              <li><Link to="/about" className="text-xs text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="text-xs text-muted-foreground hover:text-primary transition-colors">Contact</Link></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Careers</a></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Student Discount</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold mb-4 text-xs uppercase tracking-wider">MORE ABOUT VALERI</h4>
+            <ul className="space-y-2">
+              <li><Link to="/blog" className="text-xs text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Sustainability</a></li>
+              <li><a href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">Our Story</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold mb-4 text-xs uppercase tracking-wider">EMAIL SIGN UP</h4>
+            <p className="text-xs text-muted-foreground mb-4">
+              Get exclusive offers and updates
             </p>
-            <div className="flex space-x-2">
-              <Input placeholder="Your email" className="flex-1" />
-              <Button>Join</Button>
+            <div className="flex flex-col space-y-2">
+              <Input placeholder="Your email" className="text-xs" />
+              <Button size="sm" className="text-xs font-bold uppercase tracking-wider">Subscribe</Button>
             </div>
           </div>
         </div>

@@ -60,6 +60,20 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Brand Story Section */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase tracking-tighter">
+                HOME ESSENTIALS & EVERYDAY MUST-HAVES
+              </h2>
+              <p className="text-lg mb-6 leading-relaxed">
+                Home essentials designed to help you become your personal best. Because when it comes to living at your max, there should be no obstacles – least of all your everyday tools. Functional and beautiful, we create products you'll use every day. Since our founding, we've designed and created the home essentials we want to use, because modern living and its people are what we know best.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Video Section */}
         <section className="py-24 bg-secondary">
           <div className="container mx-auto px-4">
@@ -82,50 +96,39 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Categories */}
+        {/* Products Built Section */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-black mb-6 uppercase tracking-tighter">
+                ESSENTIALS BUILT FOR REAL LIFE
+              </h2>
+              <p className="text-base mb-6 leading-relaxed">
+                Our legacy was built in the kitchen and home. VALERI was founded with a love for quality essentials and that passion continues into all our products today. You'll find the latest innovation in drinkware, kitchen tools and home tech to help you perform at your best and live in style.
+              </p>
+              <p className="text-base mb-6 leading-relaxed">
+                Our collection features temperature-controlled tumblers, smart home devices, and innovative kitchen gadgets. Whilst our product line is designed for a range of lifestyles and features sophisticated engineering, clever design and durable, long-lasting materials.
+              </p>
+              <p className="text-base leading-relaxed">
+                An obsession with quality is what started this brand, and we haven't forgotten our roots. Our products feature timeless styles, with modern functionality and innovative features to help you elevate your everyday.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Lifestyle Section */}
         <section className="py-24 bg-secondary">
           <div className="container mx-auto px-4">
-            <div className="mb-16">
-              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Collections</h2>
-              <p className="text-lg text-muted-foreground">Shop by category</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link to="/shop?category=drinkware" className="group">
-                <div className="relative overflow-hidden aspect-[4/5] bg-primary">
-                  <img 
-                    src={tumblerPink} 
-                    alt="Drinkware Collection"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-3xl font-black text-primary-foreground uppercase tracking-tight">Drinkware</h3>
-                  </div>
-                </div>
-              </Link>
-              <Link to="/shop?category=home-tech" className="group">
-                <div className="relative overflow-hidden aspect-[4/5] bg-primary">
-                  <img 
-                    src={securityCamera} 
-                    alt="Home Tech Collection"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-3xl font-black text-primary-foreground uppercase tracking-tight">Home Tech</h3>
-                  </div>
-                </div>
-              </Link>
-              <Link to="/shop?category=kitchen-essentials" className="group">
-                <div className="relative overflow-hidden aspect-[4/5] bg-primary">
-                  <img 
-                    src={vegetableChopper} 
-                    alt="Kitchen Essentials Collection"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-3xl font-black text-primary-foreground uppercase tracking-tight">Kitchen</h3>
-                  </div>
-                </div>
-              </Link>
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-black mb-6 uppercase tracking-tighter">
+                MORE THAN YOUR BEST HOME ESSENTIALS
+              </h2>
+              <p className="text-base mb-6 leading-relaxed">
+                The VALERI community is devoted to unlocking potential through quality essentials and the things we do today to prepare for tomorrow. It's every moment, every routine and milestone along the way. Game-changing drinkware, innovative home tech and everyday essentials. It's not just in the designs, it's in the people who use them.
+              </p>
+              <p className="text-base leading-relaxed">
+                We create the tools that help everyone become their personal best – no matter the goal. Our range is designed to give you the support you need to thrive, whether that's in the kitchen, at home or on the go.
+              </p>
             </div>
           </div>
         </section>

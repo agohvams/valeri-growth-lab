@@ -3,7 +3,6 @@ import cleaningMop from "@/assets/cleaning-mop.png";
 import securityCamera from "@/assets/security-camera.png";
 import vegetableChopper from "@/assets/vegetable-chopper.png";
 import tumblerPink from "@/assets/valeri-tumbler-product.jpg";
-import ledStrip from "@/assets/led-strip-lights.jpg";
 import portableBlender from "@/assets/portable-blender.jpg";
 import wineOpener from "@/assets/wine-opener.jpg";
 import siliconeBags from "@/assets/silicone-bags.jpg";
@@ -34,17 +33,6 @@ export const products: Product[] = [
     description: "Stay stylish and hydrated with a tumbler designed for the modern woman on the go. 100% leak-proof locking lid, 24-hour cold retention, 8-hour hot retention. Ergonomic handle & tapered base fits standard cup holders. Dishwasher safe with premium matte finish.",
     material: "Food-Grade Stainless Steel, Double-Wall Vacuum Insulation",
     amazonUrl: "https://www.amazon.co.uk/VALERI-Leakproof-Travel-Tumbler-Handle/dp/B0FDR886BL"
-  },
-  {
-    id: "2",
-    title: "RGB LED Strip Lights with Remote Control - 16.4ft",
-    price: "£19.99",
-    image: ledStrip,
-    rating: 4.8,
-    reviews: 2847,
-    category: "Home Tech",
-    description: "Transform any room with vibrant RGB LED strip lights. 16.4ft waterproof flexible strip with remote control, 16 million colors, and music sync mode. Perfect for bedrooms, gaming setups, and party lighting.",
-    material: "Flexible PCB, SMD 5050 LED Chips, Silicone Waterproof Coating"
   },
   {
     id: "3",

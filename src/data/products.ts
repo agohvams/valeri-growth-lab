@@ -35,6 +35,40 @@ export const products: Product[] = [
     amazonUrl: "https://www.amazon.co.uk/VALERI-Leakproof-Travel-Tumbler-Handle/dp/B0FDR886BL"
   },
   {
+    id: "7",
+    title: "Self-Squeezing Multifunctional Mini Cleaning Mop",
+    price: "£13.99",
+    image: cleaningMop,
+    rating: 4.6,
+    reviews: 567,
+    category: "Kitchen Essentials",
+    description: "Innovative self-squeezing mini mop perfect for quick cleanups. Features a built-in wringer mechanism and microfiber head. Ideal for kitchens, bathrooms, and small spaces.",
+    material: "Microfiber Mop Head, PP Plastic Handle, Stainless Steel Mechanism"
+  },
+  {
+    id: "8",
+    title: "Smart Security Indoor Camera - 1080P HD",
+    price: "£54.99",
+    salePrice: "£39.99",
+    image: securityCamera,
+    rating: 4.8,
+    reviews: 1876,
+    category: "Home Tech",
+    description: "HD indoor security camera with night vision, two-way audio, and motion detection. Connect via Wi-Fi for 24/7 home monitoring through your smartphone.",
+    material: "ABS Plastic Housing, Glass Lens, Metal Base"
+  },
+  {
+    id: "6",
+    title: "Quick-Dry Deodorizing Portable Shoe Dryer",
+    price: "£32.99",
+    image: shoeDryer,
+    rating: 4.7,
+    reviews: 428,
+    category: "Home Tech",
+    description: "Portable electric shoe dryer that quickly dries and deodorizes shoes, boots, and gloves. Perfect for wet weather and sports equipment. Compact and energy-efficient design.",
+    material: "ABS Plastic Housing, PTC Ceramic Heating Elements"
+  },
+  {
     id: "3",
     title: "Portable USB Rechargeable Blender Cup - 380ml",
     price: "£24.99",
@@ -67,40 +101,6 @@ export const products: Product[] = [
     category: "Kitchen Essentials",
     description: "Eco-friendly alternative to plastic bags. Leak-proof, airtight seal, dishwasher and freezer safe. Set includes 2 large, 2 medium, and 2 small bags in vibrant colors.",
     material: "100% Food-Grade Platinum Silicone, BPA-Free"
-  },
-  {
-    id: "6",
-    title: "Quick-Dry Deodorizing Portable Shoe Dryer",
-    price: "£32.99",
-    image: shoeDryer,
-    rating: 4.7,
-    reviews: 428,
-    category: "Home Tech",
-    description: "Portable electric shoe dryer that quickly dries and deodorizes shoes, boots, and gloves. Perfect for wet weather and sports equipment. Compact and energy-efficient design.",
-    material: "ABS Plastic Housing, PTC Ceramic Heating Elements"
-  },
-  {
-    id: "7",
-    title: "Self-Squeezing Multifunctional Mini Cleaning Mop",
-    price: "£13.99",
-    image: cleaningMop,
-    rating: 4.6,
-    reviews: 567,
-    category: "Kitchen Essentials",
-    description: "Innovative self-squeezing mini mop perfect for quick cleanups. Features a built-in wringer mechanism and microfiber head. Ideal for kitchens, bathrooms, and small spaces.",
-    material: "Microfiber Mop Head, PP Plastic Handle, Stainless Steel Mechanism"
-  },
-  {
-    id: "8",
-    title: "Smart Security Indoor Camera - 1080P HD",
-    price: "£54.99",
-    salePrice: "£39.99",
-    image: securityCamera,
-    rating: 4.8,
-    reviews: 1876,
-    category: "Home Tech",
-    description: "HD indoor security camera with night vision, two-way audio, and motion detection. Connect via Wi-Fi for 24/7 home monitoring through your smartphone.",
-    material: "ABS Plastic Housing, Glass Lens, Metal Base"
   },
   {
     id: "9",

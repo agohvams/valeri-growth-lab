@@ -17,57 +17,61 @@ const Shop = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      <main className="flex-1 py-12">
+      <main className="flex-1 py-16">
         <div className="container mx-auto px-4">
-          <div className="mb-8">
-            <h1 className="text-4xl font-bold mb-4">Shop All Products</h1>
-            <p className="text-xl text-muted-foreground mb-6">
-              Discover our complete collection of thoughtfully designed essentials
+          <div className="mb-12">
+            <h1 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Shop All</h1>
+            <p className="text-lg text-muted-foreground">
+              Premium essentials for modern living
             </p>
+          </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
-              <div className="flex gap-2 flex-wrap">
-                <Button 
-                  variant={selectedCategory === "all" ? "default" : "outline"}
-                  onClick={() => setSelectedCategory("all")}
-                >
-                  All Products
-                </Button>
-                <Button 
-                  variant={selectedCategory === "drinkware" ? "default" : "outline"}
-                  onClick={() => setSelectedCategory("drinkware")}
-                >
-                  Drinkware
-                </Button>
-                <Button 
-                  variant={selectedCategory === "home-tech" ? "default" : "outline"}
-                  onClick={() => setSelectedCategory("home-tech")}
-                >
-                  Home Tech
-                </Button>
-                <Button 
-                  variant={selectedCategory === "kitchen-essentials" ? "default" : "outline"}
-                  onClick={() => setSelectedCategory("kitchen-essentials")}
-                >
-                  Kitchen Essentials
-                </Button>
-              </div>
-              
-              <Select defaultValue="featured">
-                <SelectTrigger className="w-[180px]">
-                  <SelectValue placeholder="Sort by" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="featured">Featured</SelectItem>
-                  <SelectItem value="price-low">Price: Low to High</SelectItem>
-                  <SelectItem value="price-high">Price: High to Low</SelectItem>
-                  <SelectItem value="rating">Highest Rated</SelectItem>
-                </SelectContent>
-              </Select>
+          <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-8">
+            <div className="flex gap-2 flex-wrap">
+              <Button 
+                variant={selectedCategory === "all" ? "default" : "outline"}
+                onClick={() => setSelectedCategory("all")}
+                className="font-bold uppercase tracking-wider text-xs"
+              >
+                All
+              </Button>
+              <Button 
+                variant={selectedCategory === "drinkware" ? "default" : "outline"}
+                onClick={() => setSelectedCategory("drinkware")}
+                className="font-bold uppercase tracking-wider text-xs"
+              >
+                Drinkware
+              </Button>
+              <Button 
+                variant={selectedCategory === "home-tech" ? "default" : "outline"}
+                onClick={() => setSelectedCategory("home-tech")}
+                className="font-bold uppercase tracking-wider text-xs"
+              >
+                Home Tech
+              </Button>
+              <Button 
+                variant={selectedCategory === "kitchen-essentials" ? "default" : "outline"}
+                onClick={() => setSelectedCategory("kitchen-essentials")}
+                className="font-bold uppercase tracking-wider text-xs"
+              >
+                Kitchen
+              </Button>
             </div>
+              
+            <Select defaultValue="featured">
+              <SelectTrigger className="w-[180px]">
+                <SelectValue placeholder="Sort by" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="featured">Featured</SelectItem>
+                <SelectItem value="price-low">Price: Low to High</SelectItem>
+                <SelectItem value="price-high">Price: High to Low</SelectItem>
+                <SelectItem value="rating">Highest Rated</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} {...product} />
             ))}

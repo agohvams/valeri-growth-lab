@@ -18,16 +18,16 @@ interface ProductCardProps {
 
 const ProductCard = ({ id, image, title, price, rating, reviews, category, description, material, salePrice, amazonUrl }: ProductCardProps) => {
   return (
-    <Card className="group overflow-hidden border-border hover:shadow-lg transition-all duration-300 animate-fade-in">
-      <div className="relative overflow-hidden aspect-square">
+    <Card className="group overflow-hidden border-0 hover:shadow-xl transition-all duration-300 animate-fade-in bg-card">
+      <div className="relative overflow-hidden aspect-square bg-secondary">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
         {salePrice && (
-          <div className="absolute top-4 left-4 bg-destructive text-destructive-foreground px-3 py-1 rounded-full text-sm font-bold">
-            SAVE {Math.round((1 - parseFloat(salePrice.replace('£', '')) / parseFloat(price.replace('£', ''))) * 100)}%
+          <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-4 py-2 text-xs font-black uppercase tracking-wider">
+            -{Math.round((1 - parseFloat(salePrice.replace('£', '')) / parseFloat(price.replace('£', ''))) * 100)}%
           </div>
         )}
         {amazonUrl && (
@@ -43,34 +43,32 @@ const ProductCard = ({ id, image, title, price, rating, reviews, category, descr
           </a>
         )}
       </div>
-      <CardContent className="p-4">
-        <h3 className="font-semibold text-lg mb-2 line-clamp-1">{title}</h3>
-        <div className="flex items-center mb-2">
-          <div className="flex items-center text-amber-500">
+      <CardContent className="p-5">
+        <h3 className="font-bold text-base mb-3 line-clamp-2 uppercase tracking-tight">{title}</h3>
+        <div className="flex items-center mb-3">
+          <div className="flex items-center text-foreground">
             {[...Array(5)].map((_, i) => (
               <Star
                 key={i}
-                className={`h-4 w-4 ${i < Math.floor(rating) ? "fill-current" : ""}`}
+                className={`h-3 w-3 ${i < Math.floor(rating) ? "fill-current" : "fill-muted"}`}
               />
             ))}
           </div>
-          <span className="text-sm text-muted-foreground ml-2">({reviews})</span>
+          <span className="text-xs text-muted-foreground ml-2 font-medium">({reviews})</span>
         </div>
-        {material && (
-          <p className="text-xs text-muted-foreground mb-2 line-clamp-2">
-            <span className="font-medium">Material:</span> {material}
-          </p>
-        )}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           {salePrice ? (
             <>
-              <p className="text-2xl font-bold text-primary">{salePrice}</p>
-              <p className="text-lg text-muted-foreground line-through">{price}</p>
+              <p className="text-xl font-black text-foreground">{salePrice}</p>
+              <p className="text-sm text-muted-foreground line-through font-medium">{price}</p>
             </>
           ) : (
-            <p className="text-2xl font-bold text-primary">{price}</p>
+            <p className="text-xl font-black text-foreground">{price}</p>
           )}
         </div>
+        <Button className="w-full mt-4 font-bold uppercase tracking-wider text-xs" size="lg">
+          Add to Cart
+        </Button>
       </CardContent>
     </Card>
   );

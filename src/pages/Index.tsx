@@ -18,31 +18,23 @@ const Index = () => {
       <Header />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
+        {/* Hero Section - Gymshark Style */}
+        <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden bg-primary">
           <div 
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center opacity-40"
             style={{ backgroundImage: `url(${heroImage})` }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 to-foreground/40"></div>
-          </div>
-          <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground animate-fade-up">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Thoughtful Essentials<br />
-              <span className="text-primary">for Modern Living</span>
+          />
+          <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
+            <h1 className="text-6xl md:text-8xl font-black mb-6 leading-none tracking-tighter uppercase">
+              Be Limitless
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto opacity-90">
-              Designed to simplify life with durable, beautiful products for your home and kitchen. Now available on Amazon UK with Prime delivery.
+            <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto font-medium">
+              Premium essentials designed for those who demand more from life
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/shop">
-                <Button size="lg" className="text-lg px-8">
-                  Shop All Products
-                </Button>
-              </Link>
-              <Link to="/blog">
-                <Button size="lg" variant="outline" className="text-lg px-8 bg-background/10 backdrop-blur">
-                  Read Our Blog
+                <Button size="lg" variant="secondary" className="text-base px-10 py-6 font-bold uppercase tracking-wider">
+                  Shop Now
                 </Button>
               </Link>
             </div>
@@ -50,50 +42,42 @@ const Index = () => {
         </section>
 
         {/* Trust Badges */}
-        <section className="py-12 bg-secondary">
+        <section className="py-16 border-b">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div className="flex items-center justify-center space-x-4">
-                <Truck className="h-8 w-8 text-primary" />
-                <div>
-                  <h3 className="font-semibold">Free UK Shipping</h3>
-                  <p className="text-sm text-muted-foreground">Orders over £50</p>
-                </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <Truck className="h-10 w-10 mx-auto mb-3 text-foreground" />
+                <h3 className="font-black text-sm uppercase tracking-wider mb-1">Free Shipping</h3>
+                <p className="text-xs text-muted-foreground">Orders £50+</p>
               </div>
-              <div className="flex items-center justify-center space-x-4">
-                <Shield className="h-8 w-8 text-primary" />
-                <div>
-                  <h3 className="font-semibold">Quality Guarantee</h3>
-                  <p className="text-sm text-muted-foreground">Built to last</p>
-                </div>
+              <div className="text-center">
+                <Shield className="h-10 w-10 mx-auto mb-3 text-foreground" />
+                <h3 className="font-black text-sm uppercase tracking-wider mb-1">Quality First</h3>
+                <p className="text-xs text-muted-foreground">Built to Last</p>
               </div>
-              <div className="flex items-center justify-center space-x-4">
-                <Star className="h-8 w-8 text-primary" />
-                <div>
-                  <h3 className="font-semibold">4.8★ Rating</h3>
-                  <p className="text-sm text-muted-foreground">500+ reviews</p>
-                </div>
+              <div className="text-center">
+                <Star className="h-10 w-10 mx-auto mb-3 text-foreground" />
+                <h3 className="font-black text-sm uppercase tracking-wider mb-1">4.8★ Rated</h3>
+                <p className="text-xs text-muted-foreground">500+ Reviews</p>
               </div>
-              <div className="flex items-center justify-center space-x-4">
-                <TrendingUp className="h-8 w-8 text-primary" />
-                <div>
-                  <h3 className="font-semibold">10,000+ Sold</h3>
-                  <p className="text-sm text-muted-foreground">This month</p>
-                </div>
+              <div className="text-center">
+                <TrendingUp className="h-10 w-10 mx-auto mb-3 text-foreground" />
+                <h3 className="font-black text-sm uppercase tracking-wider mb-1">10K+ Sold</h3>
+                <p className="text-xs text-muted-foreground">This Month</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Video Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">See VALERI in Action</h2>
-              <p className="text-xl text-muted-foreground">Discover how our products elevate everyday living</p>
+        <section className="py-0 bg-secondary">
+          <div className="container mx-auto px-4 py-24">
+            <div className="mb-16">
+              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">In Action</h2>
+              <p className="text-lg text-muted-foreground">See what you're missing</p>
             </div>
-            <div className="max-w-4xl mx-auto">
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+            <div className="max-w-5xl mx-auto">
+              <div className="relative aspect-video overflow-hidden bg-primary">
                 <video 
                   controls 
                   className="w-full h-full object-cover"
@@ -108,66 +92,68 @@ const Index = () => {
         </section>
 
         {/* Featured Products */}
-        <section className="py-20">
+        <section className="py-24">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Best Sellers</h2>
-              <p className="text-xl text-muted-foreground">Our most loved products - available now on Amazon</p>
+            <div className="mb-16">
+              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Best Sellers</h2>
+              <p className="text-lg text-muted-foreground">Premium quality, trusted by thousands</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {featuredProducts.map((product) => (
                 <ProductCard key={product.id} {...product} />
               ))}
             </div>
             <div className="text-center">
               <Link to="/shop">
-                <Button size="lg" variant="outline">View All Products</Button>
+                <Button size="lg" className="px-12 py-6 text-base font-bold uppercase tracking-wider">
+                  Shop All
+                </Button>
               </Link>
             </div>
           </div>
         </section>
 
         {/* Categories */}
-        <section className="py-20 bg-secondary">
+        <section className="py-24 bg-secondary">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Shop by Category</h2>
-              <p className="text-xl text-muted-foreground">Find exactly what you need</p>
+            <div className="mb-16">
+              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Collections</h2>
+              <p className="text-lg text-muted-foreground">Shop by category</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Link to="/shop?category=drinkware" className="group">
-                <div className="relative overflow-hidden rounded-lg aspect-square">
+                <div className="relative overflow-hidden aspect-[4/5] bg-primary">
                   <img 
                     src={tumblerPink} 
                     alt="Drinkware Collection"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 to-transparent flex items-end p-6">
-                    <h3 className="text-2xl font-bold text-primary-foreground">Drinkware</h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent flex items-end p-8">
+                    <h3 className="text-3xl font-black text-primary-foreground uppercase tracking-tight">Drinkware</h3>
                   </div>
                 </div>
               </Link>
               <Link to="/shop?category=home-tech" className="group">
-                <div className="relative overflow-hidden rounded-lg aspect-square">
+                <div className="relative overflow-hidden aspect-[4/5] bg-primary">
                   <img 
                     src={securityCamera} 
                     alt="Home Tech Collection"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 to-transparent flex items-end p-6">
-                    <h3 className="text-2xl font-bold text-primary-foreground">Home Tech</h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent flex items-end p-8">
+                    <h3 className="text-3xl font-black text-primary-foreground uppercase tracking-tight">Home Tech</h3>
                   </div>
                 </div>
               </Link>
               <Link to="/shop?category=kitchen-essentials" className="group">
-                <div className="relative overflow-hidden rounded-lg aspect-square">
+                <div className="relative overflow-hidden aspect-[4/5] bg-primary">
                   <img 
                     src={vegetableChopper} 
                     alt="Kitchen Essentials Collection"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 to-transparent flex items-end p-6">
-                    <h3 className="text-2xl font-bold text-primary-foreground">Kitchen Essentials</h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent flex items-end p-8">
+                    <h3 className="text-3xl font-black text-primary-foreground uppercase tracking-tight">Kitchen</h3>
                   </div>
                 </div>
               </Link>
@@ -176,13 +162,13 @@ const Index = () => {
         </section>
 
         {/* Testimonials */}
-        <section className="py-20">
+        <section className="py-24">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">What Our Customers Say</h2>
-              <p className="text-xl text-muted-foreground">Real Amazon reviews from verified buyers</p>
+            <div className="mb-16">
+              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Reviews</h2>
+              <p className="text-lg text-muted-foreground">What our community says</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   name: "Sarah Thompson",
@@ -206,23 +192,16 @@ const Index = () => {
                   verified: true
                 }
               ].map((testimonial, i) => (
-                <div key={i} className="bg-card p-6 rounded-lg border animate-fade-in" style={{ animationDelay: `${i * 0.1}s` }}>
-                  <div className="flex items-center mb-4">
+                <div key={i} className="bg-secondary p-8 animate-fade-in border-0" style={{ animationDelay: `${i * 0.1}s` }}>
+                  <div className="flex items-center mb-6">
                     {[...Array(testimonial.rating)].map((_, j) => (
-                      <Star key={j} className="h-5 w-5 text-amber-500 fill-current" />
+                      <Star key={j} className="h-4 w-4 text-foreground fill-current" />
                     ))}
                   </div>
-                  <p className="text-muted-foreground mb-4 italic">&quot;{testimonial.review}&quot;</p>
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="font-semibold">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.product}</p>
-                    </div>
-                    {testimonial.verified && (
-                      <span className="text-xs bg-accent/20 text-accent px-2 py-1 rounded">
-                        ✓ Verified Purchase
-                      </span>
-                    )}
+                  <p className="text-foreground mb-6 font-medium leading-relaxed">&quot;{testimonial.review}&quot;</p>
+                  <div>
+                    <p className="font-black text-sm uppercase tracking-wider mb-1">{testimonial.name}</p>
+                    <p className="text-xs text-muted-foreground">{testimonial.product}</p>
                   </div>
                 </div>
               ))}
@@ -231,20 +210,21 @@ const Index = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-primary text-primary-foreground">
+        <section className="py-24 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
-            <TrendingUp className="h-12 w-12 mx-auto mb-6" />
-            <h2 className="text-4xl font-bold mb-4">Join 10,000+ Happy Customers</h2>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Get 10% off your first order when you sign up for our newsletter
+            <h2 className="text-5xl md:text-6xl font-black mb-6 uppercase tracking-tighter">Join The Movement</h2>
+            <p className="text-xl mb-10 max-w-2xl mx-auto font-medium">
+              Get exclusive early access to new drops and special offers
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
               <input 
                 type="email" 
                 placeholder="Enter your email" 
-                className="flex-1 px-4 py-3 rounded-lg text-foreground"
+                className="flex-1 px-6 py-4 text-foreground bg-background border-0 font-medium"
               />
-              <Button size="lg" variant="secondary">Subscribe</Button>
+              <Button size="lg" variant="secondary" className="px-8 font-bold uppercase tracking-wider">
+                Subscribe
+              </Button>
             </div>
           </div>
         </section>

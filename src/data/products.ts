@@ -30,7 +30,7 @@ export const products: Product[] = [
     rating: 5.0,
     reviews: 6,
     category: "Drinkware",
-    description: "Stay stylish and hydrated with a tumbler designed for the modern woman on the go. 100% leak-proof locking lid, 24-hour cold retention, 8-hour hot retention. Ergonomic handle & tapered base fits standard cup holders. Dishwasher safe with premium matte finish.",
+    description: "Premium 40oz insulated tumbler with handle - perfect travel water bottle for women. This large stainless steel tumbler keeps drinks cold for 24 hours and hot for 8 hours with double wall vacuum insulation. Features 100% leak-proof lid, fits car cup holders, dishwasher safe. Ideal reusable water bottle for gym, office, outdoor activities. BPA-free insulated cup with ergonomic handle and stylish rose quartz finish.",
     material: "Food-Grade Stainless Steel, Double-Wall Vacuum Insulation",
     amazonUrl: "https://www.amazon.co.uk/VALERI-Leakproof-Travel-Tumbler-Handle/dp/B0FDR886BL"
   },
@@ -42,7 +42,7 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 567,
     category: "Kitchen Essentials",
-    description: "Innovative self-squeezing mini mop perfect for quick cleanups. Features a built-in wringer mechanism and microfiber head. Ideal for kitchens, bathrooms, and small spaces.",
+    description: "Innovative self-wringing squeeze mop with microfiber head - compact floor cleaning mop for kitchen, bathroom, and small spaces. This mini flat mop features hands-free squeeze wringer mechanism for easy cleaning without bending. Reusable microfiber pad is machine washable and perfect for hardwood, tile, laminate floors. Space-saving design ideal for apartments, RVs, and quick spill cleanups. Lightweight wet dry mop with ergonomic handle.",
     material: "Microfiber Mop Head, PP Plastic Handle, Stainless Steel Mechanism"
   },
   {
@@ -54,7 +54,7 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 1876,
     category: "Home Tech",
-    description: "HD indoor security camera with night vision, two-way audio, and motion detection. Connect via Wi-Fi for 24/7 home monitoring through your smartphone.",
+    description: "1080P WiFi security camera for home with night vision, two-way audio, and motion detection alerts. Smart indoor camera compatible with Alexa, works with iOS and Android app for 24/7 surveillance. Perfect baby monitor camera, pet camera, or nanny cam with real-time notifications. Features infrared night vision, cloud storage option, pan-tilt function, and easy wireless setup. Ideal CCTV camera for bedroom, living room, office monitoring.",
     material: "ABS Plastic Housing, Glass Lens, Metal Base"
   },
   {
@@ -65,7 +65,7 @@ export const products: Product[] = [
     rating: 4.7,
     reviews: 428,
     category: "Home Tech",
-    description: "Portable electric shoe dryer that quickly dries and deodorizes shoes, boots, and gloves. Perfect for wet weather and sports equipment. Compact and energy-efficient design.",
+    description: "Electric boot dryer and shoe warmer - portable footwear dryer with heating technology for fast drying. Eliminates moisture and odors from shoes, boots, trainers, gloves, and socks in 1-2 hours. PTC ceramic heating provides safe, energy-efficient drying without damage. Perfect shoe dehumidifier for wet weather, sports equipment, ski boots, work boots. Compact design ideal for home, gym, travel. Prevents mold and bacteria growth while extending shoe life.",
     material: "ABS Plastic Housing, PTC Ceramic Heating Elements"
   },
   {
@@ -76,7 +76,7 @@ export const products: Product[] = [
     rating: 4.7,
     reviews: 1653,
     category: "Kitchen Essentials",
-    description: "Make fresh smoothies anywhere with this portable USB rechargeable blender. 6-blade system, BPA-free, perfect for gym, office, or travel. One-button operation and easy to clean.",
+    description: "Personal portable blender for smoothies and shakes - mini blender with USB rechargeable battery for travel, gym, office. This small cordless blender features powerful 6-blade system that crushes ice and frozen fruit. BPA-free 380ml bottle blender with one-touch operation, leak-proof lid. Perfect protein shake blender, juice maker, baby food blender on the go. Easy to clean single serve blender with 15+ blends per charge.",
     material: "BPA-Free Tritan Plastic, Stainless Steel Blades"
   },
   {
@@ -88,7 +88,7 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 892,
     category: "Kitchen Essentials",
-    description: "Open wine bottles effortlessly with this premium electric corkscrew. Opens up to 30 bottles on a single charge. Includes foil cutter, elegant design perfect for wine lovers.",
+    description: "Automatic electric wine opener with rechargeable battery - cordless wine bottle opener that removes corks in seconds. This electric corkscrew opens up to 30 bottles on single charge with push-button operation. Includes foil cutter for complete wine opening set. Stainless steel spiral works with all cork types. Perfect wine accessories gift for wine lovers, sommeliers, home bar. Elegant design with LED indicator, ideal for parties and entertaining.",
     material: "Stainless Steel Corkscrew, ABS Plastic Body"
   },
   {
@@ -99,7 +99,7 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 1234,
     category: "Kitchen Essentials",
-    description: "Eco-friendly alternative to plastic bags. Leak-proof, airtight seal, dishwasher and freezer safe. Set includes 2 large, 2 medium, and 2 small bags in vibrant colors.",
+    description: "Reusable food storage bags set - eco-friendly silicone bags alternative to plastic ziplock bags. 6 pack includes 2 large sandwich bags, 2 medium snack bags, 2 small bags with airtight leak-proof seal. These reusable freezer bags are dishwasher safe, microwave safe, freezer safe. BPA-free food grade platinum silicone perfect for meal prep, lunch bags, sous vide cooking. Sustainable zero waste kitchen storage bags for fruits, vegetables, leftovers.",
     material: "100% Food-Grade Platinum Silicone, BPA-Free"
   },
   {
@@ -110,7 +110,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 743,
     category: "Kitchen Essentials",
-    description: "Multi-functional vegetable chopper with multiple blade options for dicing, slicing, and julienne cuts. Makes meal prep faster and easier with uniform cuts every time.",
+    description: "8-in-1 vegetable chopper and food dicer - multifunctional veggie chopper with interchangeable blades for dicing, slicing, julienne, grating. This manual food chopper makes meal prep easy with uniform cuts for onions, tomatoes, carrots, salads. Includes container to catch chopped vegetables. BPA-free onion chopper with sharp stainless steel blades, non-slip base. Perfect kitchen gadget for salad maker, cheese grater, veggie slicer. Easy to clean and dishwasher safe.",
     material: "BPA-Free ABS Plastic, 420 Stainless Steel Blades"
   }
 ];

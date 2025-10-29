@@ -73,7 +73,7 @@ const Index = () => {
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="mb-16">
-              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Best Sellers</h2>
+              <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase tracking-tighter">New In</h2>
               <p className="text-lg text-muted-foreground">Premium quality, trusted by thousands</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
@@ -84,7 +84,7 @@ const Index = () => {
             <div className="text-center">
               <Link to="/shop">
                 <Button size="lg" className="px-12 py-6 text-base font-bold uppercase tracking-wider">
-                  Shop All
+                  View All
                 </Button>
               </Link>
             </div>
